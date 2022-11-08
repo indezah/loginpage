@@ -72,18 +72,16 @@
             justify-content: center;
             align-items: center;
         }
-        form input{
+
+        form input {
             margin-bottom: 20px;
             height: 30px;
             width: 20vw;
             border-radius: 5px;
-            border: 1px solid #18242279 ;
-        }
-        form label{
-            margin-bottom: 220px;
+            border: 1px solid #18242279;
         }
 
-        form button{
+        form button {
             font-size: 15px;
             background-color: #182422;
             color: white;
@@ -91,6 +89,9 @@
             border-radius: 5px;
             padding: 10px;
             margin-top: 10px;
+        }
+        label{
+            color: rgb(59, 59, 59);
         }
     </style>
 </head>
@@ -113,15 +114,19 @@
         <div class="grid-item leftpanel"></div>
         <div class="grid-item mainbg ">
             <div>
+                <div style="background-color: white; padding: 50px; border-radius: 10px; box-shadow: 0px 1px 10px rgb(107, 107, 107);">
                 <h1>Login</h1>
-                <form action="">
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email"><br>
-                    <label for="password">Password</label><br>
-                    <input type="password" name="password" id="password"><br>
-                    <input style="width: auto; height:auto;" type="checkbox" name="remember" id="remember"><label for="remember">Remember</label>
-                    <br><button type="submit">Login</button>
-                </form>
+                
+                    <form action="" method="post">
+                        <label for="email">Email</label><br>
+                        <input style="padding-left:10px ;" type="email" name="email" id="email"><br>
+                        <label for="password">Password</label><br>
+                        <input style="padding-left:10px ;" type="password" name="password" id="password"><br>
+                        <input style="width: auto; height:auto;" type="checkbox" name="remember" id="remember"><label
+                            for="remember">Remember</label>
+                        <br><button type="submit">Login</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
